@@ -10,8 +10,8 @@ Self-sourcing components for SK-Tank Barebones Kit.
 |Control   |Mellow Fly CDY v2                           | 1|At least 6 driver slots          |4 holes on back panel    |
 |Control   |TMC2225                                     | 6|(or other drivers)               |                         |
 |Stepper   |NEMA17 1.8°/0.9° stepper for XY             | 2|Common NEMA 17 stepper           |                         |
-|Stepper   |NEMA17 1.8° pancake stepper for E           | 1|Common NEMA 17 pancake stepper   |max 24mm tall (PPS.)     |
-|Extruder  |BMG or Hemera extruder                      | 1|                                 |                         |
+|Stepper   |NEMA17 1.8° pancake stepper for E           | 1|Common NEMA 17 pancake stepper   |(PPS.)                   |
+|Extruder  |BMG or Hemera extruder                      | 1|(PPS.)                           |                         |
 |Fan       |4010 fan for driver cooling                 | 1|24V                              |                         |
 |Fan       |4020 blower for part cooling                | 1|24V                              |                         |
 |Sensor    |Lerdge optical endstop                      | 3|5V                               |                         |
@@ -23,6 +23,6 @@ Self-sourcing components for SK-Tank Barebones Kit.
 
 PS. Pre-drilled holes are there on the ACM (Aluminum Composite Material) back panel but you can still drill customized holes easily.
 
-PPS. For direct extrusion E stepper should be at most 24mm tall, or it cannot be inserted in between stock extruder plates.
+PPS. Use your preferred extruder and design a customized adapter based on [SK-Tank BMG adapter STEP file](https://github.com/SecKit/SK-Tank/tree/master/STEP%20files/extruder%20adapter%20-%20BMG) and [SK-Tank extruder carriage STEP file](https://github.com/SecKit/SK-Tank/tree/master/STEP%20files/extruder%20carriage).
 
 *SecKit will not be responsible for your self-sourcing items.*
