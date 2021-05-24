@@ -6,29 +6,10 @@
 ; ---------------------------------------------------------------------
 ; G31: Set or Report Current Probe status
 ; G32: Run bed.g macro
-; 
-; Since the Z endstop is not always accurately installed, the nozzle could crash into or is still
-; above the bed surface after "G28". "G31" and "G32" help set a correct Z datum.
-; 
-; Find a value of param Z of "G31" which "G1 Z0" makes the nozzle touching but 
-; not crashing into the bed surface after "G32" auto bed tramming.
-; 
-; With a PEI plate, the PINDA ABL sensor senses the steel layer under the PEI layer, 
-; the nozzle is actually closer to the PEI surface. Therefore a "G28" will crash the nozzle.
 ;
-; Here are steps to find a proper Z param of "G31":
-;
-; 1. Set a lower Z param to G31, for example "Z0.1".
-; 2. Run bed.g marcro with gcode "G32".
-; 3. Run "G1 X0 Y0 Z10" to move the nozzle to a location where you can check the gap beteween 
-;    nozzle and printing surface easily.
-; 4. Move the nozzle 0.1mm or 0.05mm closer and closer until it touches the surface, and current
-;    current Z coordinate shown at the dashboard should still larger than 0. Write down the Z
-;    coordinate value.
-; 5. Add the Z coordinate value to previous Z param in G31.
-; 6. Iterate from step 2 until "G1 Z0" makes the nozzle touching but not crash into the surface.
-; 7. Once a proper Z param of G31 is found, add "G28" and then "G32" to the beginning of each 
-;    gcode file in the slicer.
+; Please refer to "Inductive ABL sensor setup" and find a proper value
+; for G31 Z parameter.
+; https://sites.google.com/view/seckit-wiki/sk-tank-350x350x400/sk-tank-tuning/inductive-abl-sensor-setup
 
 
 M558 P5 C"zstopmax" H15 F600 T12000               ; setup z probe as filtered digital (P5), etc. set a higher dive height H30 to prevent nozzle crash.
@@ -36,7 +17,7 @@ G31 P500 X-23 Y14 Z0.95
 G28
 G30 P0 X3  Y10  Z-99999
 G30 P1 X290 Y10  Z-99999
-G30 P2 X157 Y290 Z-99999 S3
+G30 P2 X157 Y315 Z-99999 S3
 M558 P5 C"zstopmax" H3 F600 T12000                ; set a low dive height H3 for faster mesh building
 G31 P500 X-23 Y14 Z0.95
 
