@@ -1,2 +1,0 @@
-**Duet config files**
-
