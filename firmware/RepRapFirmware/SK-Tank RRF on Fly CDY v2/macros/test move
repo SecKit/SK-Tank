@@ -1,0 +1,14 @@
+g90	; abs movement
+g1 x10 y10 f9000
+g1 y290
+g1 y10
+g1 y290
+g1 y10
+g1 y290
+g1 y10
+g1 y290
+g1 y10
+g1 y290
+g1 y10
+g1 y290
+g1 y10

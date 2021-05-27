@@ -1,0 +1,7 @@
+g90	; abs movement
+g0 x5 y5 f18000
+g0 x270 y5
+g0 x270 y280
+g0 x5 y280
+g0 x5 y5
+g91	; relative movement
