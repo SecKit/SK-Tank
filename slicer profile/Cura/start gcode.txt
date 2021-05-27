@@ -1,0 +1,9 @@
+;G28 ; Ignore G28 here. Will be run in G32 bed.g
+G32 ;auto bed tramming and find a correct Z datum
+G29 S1 ;load default mesh
+M572 D0 S0.08 ; Pressure advance
+G1 Z15.0 F6000 ;Move the platform down 15mm
+;Prime the extruder
+G92 E0
+G1 F200 E3
+G92 E0
