@@ -18,11 +18,11 @@ M586 P2 S0                                              ; disable Telnet
 
 
 ; Drives
-M569 P0 S1                                              ; physical drive 0 goes forwards using default driver timings
-M569 P1 S1                                              ; physical drive 1 goes forwards using default driver timings
+M569 P0 S0                                              ; physical drive 0 goes backwards using default driver timings
+M569 P1 S0                                              ; physical drive 1 goes backwards using default driver timings
 M569 P2 S1                                              ; physical drive 2 goes forwards using default driver timings
 M569 P3 S1                                              ; physical drive 3 goes forwards using default driver timings
-M569 P4 S0                                              ; physical drive 4 goes forwards using default driver timings
+M569 P4 S0                                              ; physical drive 4 goes backwards using default driver timings
 M569 P5 S1                                              ; physical drive 5 goes forwards using default driver timings
 M584 X0 Y1 Z2:4:5 E3                                    ; set drive mapping
 M671 X-4:330:157 Y-11:-11:334 S50                       ; set z drive coordinates
