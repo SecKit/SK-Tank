@@ -60,8 +60,7 @@ M307 H1 R2.204 C269.4 D5.26 S1.00 V0.0
 M143 H1 S250                                            ; set temperature limit for heater 1 to 280C
 
 ; Fans
-; Ernest: pin fan0 has been short-circuited and POPPED in my Mellow FLY CDY v2.
-M950 F0 C"fan2" Q500                                    ; create fan 0 on pin fan2 and set its frequency.
+M950 F0 C"fan0" Q500                                    ; create fan 0 on pin fan0 and set its frequency.
 M106 P0 S0 H-1                                          ; set fan 0 value. Thermostatic control is turned off
 M950 F1 C"fan1" Q500                                    ; create fan 1 on pin fan1 and set its frequency
 M106 P1 S0 H1 T50                                       ; set fan 1 value. Thermostatic control is turned on
