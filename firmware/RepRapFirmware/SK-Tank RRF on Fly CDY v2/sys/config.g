@@ -30,7 +30,6 @@ M350 X16 Y16 Z16:16:16 E16 I1                           ; configure microsteppin
 M92 X200.00 Y200.00 Z2000.00 E420.00                    ; set steps per mm
 M566 X600.00 Y600.00 Z24.00 E300.00                     ; set maximum instantaneous speed changes (mm/min)
 M203 X30000.00 Y30000.00 Z450.00 E6000.00               ; set maximum speeds (mm/min)
-;M201 X2000.00 Y1250.00 Z100.00 E2000.00                ; set accelerations (mm/s^2)
 M201 X2000.00 Y1500.00 Z100.00 E2000.00                 ; set accelerations (mm/s^2)
 M906 X1000 Y1000 Z600 E700 I30                          ; set motor currents (mA) and motor idle factor in per cent
 M84 S30                                                 ; Set idle timeout
@@ -42,6 +41,12 @@ M208 X0:330 Y-12:330 Z0:400                             ; set axis limits
 M574 X1 S1 P"xstop"                                     ; configure active-high endstop for low end on X via pin xstop
 M574 Y1 S1 P"ystop"                                     ; configure active-high endstop for low end on Y via pin ystop
 M574 Z1 S1 P"zstop"                                     ; configure active-high endstop for low end on Z via pin zstop
+
+; Filament sensor
+; Wire polarity of the sensor might be different batch by batch.
+; Please open the sensor case and double check before enabling it.
+;
+; M591 D0 P2 C"xstopmax" S1
 
 ; Z-Probe
 M558 P5 C"zstopmax" H10 F600 T12000                     ; set Z probe type as filtered digital (P5), dive height to 10.
