@@ -4,6 +4,10 @@ Website
 
 https://seckit3dp.design/price/sk-tank
 
+Wiki: Assembly Manual, tuning guide, etc.
+
+https://sites.google.com/view/seckit-wiki/sk-tank-350x350x400
+
 
 Join SecKit's FaceBook group for owner's discussion and latest update
 
