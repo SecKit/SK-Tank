@@ -11,15 +11,15 @@
 ; for G31 Z parameter.
 ; https://sites.google.com/view/seckit-wiki/sk-tank-350x350x400/sk-tank-tuning/inductive-abl-sensor-setup
 
-M561                                              ; clear any bed transform. treat the bed as an ideal flat surface.
-M558 P5 C"zstopmax" H15 F600 T12000               ; setup z probe as filtered digital (P5), etc. set a higher dive height H30 to prevent nozzle crash.
-G31 P500 X-23 Y14 Z0.95
+M561                               ; clear any bed transform. treat the bed as an ideal flat surface.
+; Don't use parameter P of M558 here as it will reset probe offsets assigned in G31.
+M558 H20 F600 T12000               ; set a higher dive height H20 to prevent nozzle crash. 
 G28
 G30 P0 X3  Y10  Z-99999
 G30 P1 X290 Y10  Z-99999
 G30 P2 X157 Y315 Z-99999 S3
-M558 P5 C"zstopmax" H3 F600 T12000                ; set a low dive height H3 for faster mesh building
-G31 P500 X-23 Y14 Z0.95
+; Don't use parameter P of M558 here as it will reset probe offsets assigned in G31.
+M558 H3 F600 T12000                ; set a low dive height H3 for faster mesh building.
 
 ;----------------------------------------
 ; uncomment below to include mesh building in G32

@@ -51,8 +51,7 @@ M574 Z1 S1 P"zstop"                                     ; configure active-high 
 
 ; Z-Probe
 M558 P5 C"zstopmax" H10 F600 T12000                     ; set Z probe type as filtered digital (P5), dive height to 10.
-; Move this G31 into bed.g because two M558 to change different dive heights will cancel G31 probe offset.
-;G31 P500 X-23 Y14 Z1.5                                  ; set Z probe trigger value, offset and trigger height
+G31 P500 X-23 Y14 Z1.5                                  ; set Z probe trigger value, offset and trigger height
 M557 X0:290 Y2:292 S36.25                               ; define mesh grid
 
 ; Heaters
