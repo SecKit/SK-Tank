@@ -1,0 +1,1 @@
+This is for an **E3D V6** hotend.
