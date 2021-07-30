@@ -47,7 +47,7 @@ M574 Z1 S1 P"zstop"                                     ; configure active-high 
 ; Wire polarity of the sensor might be different batch by batch.
 ; Please open the sensor case and double check before enabling it.
 ;
-; M591 D0 P2 C"xstopmax" S1
+; M591 D0 P2 C"xstopmax" S1                             ; P2 = simple sensor (low signal when filament present)
 
 ; Z-Probe
 M558 P5 C"zstopmax" H10 F600 T12000                     ; set Z probe type as filtered digital (P5), dive height to 10.
