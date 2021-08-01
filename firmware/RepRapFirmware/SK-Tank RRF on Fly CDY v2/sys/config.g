@@ -30,9 +30,9 @@ M671 X-4:330:157 Y-11:-11:334 S50                       ; set z drive coordinate
 M350 X16 Y16 Z16:16:16 E16 I1                           ; configure microstepping with interpolation
 M92 X200.00 Y200.00 Z2000.00 E420.00                    ; set steps per mm
 M566 X600.00 Y600.00 Z24.00 E300.00                     ; set maximum instantaneous speed changes (mm/min)
-M203 X30000.00 Y30000.00 Z450.00 E2400.00               ; set maximum speeds (mm/min)
+M203 X30000.00 Y30000.00 Z450.00 E3000.00               ; set maximum speeds (mm/min)
 M201 X2000.00 Y1500.00 Z100.00 E2000.00                 ; set accelerations (mm/s^2)
-M906 X1000 Y1000 Z600 E700 I30                          ; set motor currents (mA) and motor idle factor in per cent
+M906 X1000 Y1000 Z600 E800 I30                          ; set motor currents (mA) and motor idle factor in per cent
 M84 S30                                                 ; Set idle timeout
 
 ; Axis Limits
