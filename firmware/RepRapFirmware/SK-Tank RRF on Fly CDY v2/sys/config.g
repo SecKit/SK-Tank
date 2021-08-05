@@ -41,18 +41,29 @@ M208 X0:330 Y-12:330 Z0:400                             ; set axis limits
 ; Endstops
 M574 X1 S1 P"xstop"                                     ; configure active-high endstop for low end on X via pin xstop
 M574 Y1 S1 P"ystop"                                     ; configure active-high endstop for low end on Y via pin ystop
-M574 Z1 S1 P"zstop"                                     ; configure active-high endstop for low end on Z via pin zstop
 
-; Filament sensor
-; Wire polarity of the sensor might be different batch by batch.
-; Please open the sensor case and double check before enabling it.
+;========================================================
+; Z endstop device
+; Choose your preferred configuration and uncomment according commands.
+; Related choice are in config.g, homez.g and homeall.g.
+;========================================================
+; <A> Use inductive sensor as Z endstop (z min endstop slot)
 ;
-; M591 D0 P2 C"xstopmax" S1                             ; P2 = simple sensor (low signal when filament present)
+M574 Z1 S2												; configure active-high endstop for low end on Z via pin zstop
+M558 P5 C"zstop" I1 H5 F600 T12000 A1                   ; set Z probe type as filtered digital (P5), dive height to 10.
+;--------------------------------------------------------
+; <B> Use Z optical endstop (z min endstop slot) and 
+;     inductive sensor (z max endstop slot)
+;
+;M574 Z1 S1 P"zstop"                                     ; configure active-high endstop for low end on Z via pin zstop
+;M558 P5 C"zstopmax" H10 F600 T12000                     ; set Z probe type as filtered digital (P5), dive height to 8.
+;========================================================
 
 ; Z-Probe
-M558 P5 C"zstopmax" H10 F600 T12000                     ; set Z probe type as filtered digital (P5), dive height to 10.
-G31 P500 X-23 Y14 Z1.5                                  ; set Z probe trigger value, offset and trigger height
-M557 X0:290 Y2:292 S36.25                               ; define mesh grid
+G31 P500 X-23 Y14 Z1.35                                 ; set Z probe trigger value, offset and trigger height
+;M557 X0:290 Y2:320 S48.33:53                           ; define mesh grid
+M557 X0:305 Y2:320 S38.125:39.75                        ; define mesh grid
+
 
 ; Heaters
 M308 S0 P"bedtemp" Y"thermistor" A"Bed heater" T100000 B3950          ; configure sensor 0 as thermistor on pin bedtemp
