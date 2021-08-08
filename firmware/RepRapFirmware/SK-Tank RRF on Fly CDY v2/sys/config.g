@@ -74,7 +74,7 @@ M143 H0 S120                                            ; set temperature limit 
 M308 S1 P"e0temp" Y"thermistor" A"Tool0 heater" T100000 B4725 C7.06e-8  ; configure sensor 1 as thermistor on pin e0temp
 M950 H1 C"e0heat" T1                                    ; create nozzle heater output on e0heat and map it to sensor 1
 M307 H1 R2.204 C269.4 D5.26 S1.00 V0.0
-M143 H1 S250                                            ; set temperature limit for heater 1 to 280C
+M143 H1 S250                                            ; set temperature limit for heater 1 to a conservative value 250C. Usually it can do 280C.
 
 ; Fans
 M950 F0 C"fan0" Q500                                    ; create fan 0 on pin fan0 and set its frequency.
