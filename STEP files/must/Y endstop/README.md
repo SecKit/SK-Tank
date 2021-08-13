@@ -4,6 +4,7 @@ Please check the positions of Y rails in the manual
 
 https://sites.google.com/view/seckit-wiki/sk-tank-350x350x400/assembly-manual/sk-tank-assembly-manual/8-xy-plane
 
+Use **dark color** filament for the finger or **paint it black** to block the optical sensor.
 
 
 Slicer settings - default base and finger
