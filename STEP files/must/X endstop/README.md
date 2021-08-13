@@ -1,3 +1,7 @@
+Use **dark color** filament for the finger or **paint it black** to block the optical sensor.
+
+
+
 Slicer settings
 
 |Setting        |Description               |
