@@ -9,5 +9,3 @@ Slicer settings
 
 
 PLA/PETG, 0.4mm nozzle, 0.2mm layer height
-
-Contributed by SK-Tank owner Laurens F.
