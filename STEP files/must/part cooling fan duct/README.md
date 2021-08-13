@@ -1,7 +1,7 @@
 Slicer settings
 
 |Setting        |Description               |
-|---------------|:-------------------------|
+|:--------------|:-------------------------|
 |Quantity       |1                         |
 |Wall thickness |2.8 mm                    |
 |Infill         |30%                       |

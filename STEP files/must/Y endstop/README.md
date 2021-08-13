@@ -9,7 +9,7 @@ https://sites.google.com/view/seckit-wiki/sk-tank-350x350x400/assembly-manual/sk
 Slicer settings - default base and finger
 
 |Setting        |Description               |
-|---------------|:-------------------------|
+|:--------------|:-------------------------|
 |Quantity       |1                         |
 |Wall thickness |2mm and above             |
 |Infill         |100%                      |
@@ -19,7 +19,7 @@ Slicer settings - default base and finger
 Slicer settings - alternative base
 
 |Setting        |Description               |
-|---------------|:-------------------------|
+|:--------------|:-------------------------|
 |Quantity       |1                         |
 |Wall thickness |2mm and above             |
 |Infill         |100%                      |
