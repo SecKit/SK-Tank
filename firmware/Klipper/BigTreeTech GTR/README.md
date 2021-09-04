@@ -7,3 +7,5 @@ SK-Tank Klipper config file:
 - Inductive sensor as Z endstop and ABL sensor
 - Auto bed tramming enabled
 - Input shaper ready
+
+BigTreeTech GTR is chosen instead of Octopus due to the STM32F407 microprocessor has a larger flash size for RepRapFirmware binary.
