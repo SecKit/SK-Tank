@@ -1,5 +1,3 @@
-Slicing tips
-
-Printed files are all non-structural components so a common PLA or PETG filament with 0.4mm nozzle and 0.2mm layer height will do.
-
-For special slicing settings please refer to the README.md file and print orientation pictures in each STL directory. 
+- One 4010 fan pushing air toward E3D v6 heat sink.
+- Two 4010 blowers for part cooling.
+- Performance not verified yet.
