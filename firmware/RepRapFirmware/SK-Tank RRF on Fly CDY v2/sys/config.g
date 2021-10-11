@@ -17,8 +17,9 @@ M586 P1 S0                                              ; disable FTP
 M586 P2 S0                                              ; disable Telnet
 
 
-
 ; Drives
+; Enable StealthChop for XY under 50mm/s if you need constantly 
+; low movements and found undesired noise around 45mm/s
 M569 P0 S0                                              ; physical drive 0 goes backwards using default driver timings
 M569 P1 S0                                              ; physical drive 1 goes backwards using default driver timings
 M569 P2 S1                                              ; physical drive 2 goes forwards using default driver timings
