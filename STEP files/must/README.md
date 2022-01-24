@@ -12,3 +12,12 @@ Slicing settings
 |Support        |None          |None          |10%           |20% w/ blocker|None          |None          |20%           |
 
 
+Carbon fiber gantry/washers for belt handlers
+|Setting        | Lower washer | Upper washer |
+|:--------------|:-------------|:-------------|
+|Quantity       |2             |2             |
+|Wall thickness |2 mm          |2 mm          |
+|Infill         |100%          |100%          |
+|Support        |None          |None          |
+
+
