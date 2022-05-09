@@ -9,14 +9,12 @@ FILE_DESCRIPTION(
 /* implementation_level */ '2;1');
 
 FILE_NAME(
-/* name */ 
-'/Users/ernie/src/GitHub SecKit/SK-Tank/STEP files/reference/bed/SK-Ta
-nk 5083 plate v1.step',
-/* time_stamp */ '2022-03-24T16:08:17+08:00',
+/* name */ '/Users/ernie/Desktop/SK-Tank bed 350x350x8 v1.step',
+/* time_stamp */ '2022-05-09T21:06:07+08:00',
 /* author */ (''),
 /* organization */ (''),
 /* preprocessor_version */ 'ST-DEVELOPER v18.1',
-/* originating_system */ 'Autodesk Translation Framework v10.13.0.1454',
+/* originating_system */ 'Autodesk Translation Framework v10.14.0.1471',
 
 /* authorisation */ '');
 
@@ -3604,17 +3602,17 @@ SOLID_ANGLE_UNIT()
 #3522=PRODUCT_DEFINITION_SHAPE('',$,#3525);
 #3523=SHAPE_REPRESENTATION('',(#2043),#3515);
 #3524=PRODUCT_DEFINITION_CONTEXT('part definition',#3529,'design');
-#3525=PRODUCT_DEFINITION('SK-Tank 5083 plate','SK-Tank 5083 plate v1',#3526,
-#3524);
+#3525=PRODUCT_DEFINITION('SK-Tank bed 350x350x8',
+'SK-Tank bed 350x350x8 v1',#3526,#3524);
 #3526=PRODUCT_DEFINITION_FORMATION('',$,#3531);
-#3527=PRODUCT_RELATED_PRODUCT_CATEGORY('SK-Tank 5083 plate v1',
-'SK-Tank 5083 plate v1',(#3531));
+#3527=PRODUCT_RELATED_PRODUCT_CATEGORY('SK-Tank bed 350x350x8 v1',
+'SK-Tank bed 350x350x8 v1',(#3531));
 #3528=APPLICATION_PROTOCOL_DEFINITION('international standard',
 'automotive_design',2009,#3529);
 #3529=APPLICATION_CONTEXT(
 'Core Data for Automotive Mechanical Design Process');
 #3530=PRODUCT_CONTEXT('part definition',#3529,'mechanical');
-#3531=PRODUCT('SK-Tank 5083 plate','SK-Tank 5083 plate v1',$,(#3530));
+#3531=PRODUCT('SK-Tank bed 350x350x8','SK-Tank bed 350x350x8 v1',$,(#3530));
 #3532=PRESENTATION_STYLE_ASSIGNMENT((#3534));
 #3533=PRESENTATION_STYLE_ASSIGNMENT((#3535));
 #3534=SURFACE_STYLE_USAGE(.BOTH.,#3536);
