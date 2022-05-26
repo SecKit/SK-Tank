@@ -7,7 +7,7 @@ Self-sourcing components for SK-Tank Barebones Kit.
 |Power     |FS-101 fuse box and fuse                    | 1|6A for 110V. 3A for 220V.        |1 hole on back panel    |
 |Power     |Power switch                                | 1|                                 |                         |
 |Power     |Power cord                                  | 1|At least 0.75 mm^2 internal wire |150cm or longer          |
-|Control   |Mellow Fly CDY v2                           | 1|At least 6 driver slots          |4 holes on back panel    |
+|Control   |BigTreeTech Octopus or GTR                  | 1|At least 6 driver slots          |4 holes on back panel    |
 |Control   |TMC2225                                     | 6|(or other drivers)               |                         |
 |Stepper   |NEMA17 1.8°/0.9° stepper for XY             | 2|Common NEMA 17 stepper           |                         |
 |Stepper   |NEMA17 1.8° pancake stepper for E           | 1|Common NEMA 17 pancake stepper   |(PPS.)                   |
@@ -16,7 +16,7 @@ Self-sourcing components for SK-Tank Barebones Kit.
 |Fan       |4020 blower for part cooling                | 1|24V                              |                         |
 |Sensor    |Lerdge optical endstop                      | 3|5V                               |                         |
 |Sensor    |Filament runout sensor                      | 1|(optional)                       |                         |
-|Accessory |PTFE tube 1.75mm, 80cm                      | 1|                                 |                         |
+|Accessory |PTFE tube 3mm ID, 80cm                      | 1|                                 |                         |
 |Accessory |Cable tie                                   |20|                                 |                         |
 |Accessory |Cable management nylon sleeve, wrapper, etc.| 1|                                 |                         |
 
